@@ -1,0 +1,265 @@
+var iphone = [
+	{
+		"id": "0",
+		"name": "Iphone 2",
+		"model": "i2",
+		"price": "Rs-5000",
+		"img": "assets/Apple/i2.jpg"
+	},
+	{
+		"id": "1",
+		"name": "Iphone 2s",
+		"model": "i2s",
+		"price": "Rs-6000",
+		"img": "assets/Apple/i2s.jpg"
+	},
+	{
+		"id": "2",
+		"name": "Iphone 3",
+		"model": "i3",
+		"price": "Rs-7000",
+		"img": "assets/Apple/i3.png"
+	},
+	{
+		"id": "3",
+		"name": "Iphone 3s",
+		"model": "i3s",
+		"price": "Rs-8000",
+		"img": "assets/Apple/i3s.png"
+	},
+	{
+		"id": "4",
+		"name": "Iphone 4",
+		"model": "i4",
+		"price": "Rs-9000",
+		"img": "assets/Apple/i4.png"
+	},
+	{
+		"id": "5",
+		"name": "iphone 4s",
+		"model": "i4s",
+		"price": "Rs-10000",
+		"img": "assets/Apple/i4s.png"
+	},
+	{
+		"id": "6",
+		"name": "Iphone 5",
+		"model": "i5",
+		"price": "Rs-11500",
+		"img": "assets/Apple/i5.jpg"
+	},
+	{
+		"id": "7",
+		"name": "Iphone 5s",
+		"model": "i5s",
+		"price": "Rs-12000",
+		"img": "assets/Apple/i5s.jpg"
+	},
+	{
+		"id": "8",
+		"name": "Iphone 6",
+		"model": "i6",
+		"price": "Rs-14000",
+		"img": "assets/Apple/i6.jpg"
+	},
+	{
+		"id": "9",
+		"name": "Iphone 6s",
+		"model": "i6s",
+		"price": "Rs-16000",
+		"img": "assets/Apple/i6s.jpg"
+	},
+	{
+		"id": "10",
+		"name": "Iphone 6s+",
+		"model": "i6s+",
+		"price": "Rs-17000",
+		"img": "assets/Apple/i6s+.jpg"
+	},
+	{
+		"id": "11",
+		"name": "iphone 7",
+		"model": "i7",
+		"price": "Rs-20000",
+		"img": "assets/Apple/i7.jpg"
+	},
+	{
+		"id": "12",
+		"name": "Iphone 7+",
+		"model": "i7+",
+		"price": "Rs-30000",
+		"img": "assets/Apple/i7+.jpg"
+	},
+	{
+		"id": "13",
+		"name": "Iphone 8",
+		"model": "i8",
+		"price": "Rs-50000",
+		"img": "assets/Apple/i8.jpg"
+	},
+	{
+		"id": "14",
+		"name": "Iphone 8+",
+		"model": "i8+",
+		"price": "Rs-60000",
+		"img": "assets/Apple/i8+.png"
+	},
+	{
+		"id": "15",
+		"name": "Iphone X",
+		"model": "iX",
+		"price": "Rs-102000",
+		"img": "assets/Apple/iX.jpeg"
+	},
+	{
+		"id": "16",
+		"name": "Iphone Xs",
+		"model": "iXs",
+		"price": "Rs-100000",
+		"img": "assets/Apple/i8+.png"
+	},
+	{
+		"id": "17",
+		"name": "Iphone XsMAX",
+		"model": "iXsMAX",
+		"price": "Rs-1002000",
+		"img": "assets/Apple/i8+.png"
+	},
+	{
+		"id": "18",
+		"name": "Iphone 11",
+		"model": "i11",
+		"price": "Rs-103000",
+		"img": "assets/Apple/i11.png"
+	},
+	{
+		"id": "19",
+		"name": "Iphone 11 pro",
+		"model": "i11pro",
+		"price": "Rs-230000",
+		"img": "assets/Apple/i11pro.png"
+	},
+	{
+		"id": "20",
+		"name": "Iphone11proMAX",
+		"model": "i11proMAX",
+		"price": "Rs-500000",
+		"img": "assets/Apple/i11proMAX.png"
+	}
+]
+var samsung =
+[
+	{
+		"id": "0",
+		"name": "Samsung Galaxy Note10",
+		"model": "Note10",
+		"price": "Rs-150000",
+		"img": "assets/samsung/Note10.jpg"
+	},
+	{
+		"id": "1",
+		"name": "Samsung Galxy Note10+",
+		"model": "Note10+",
+		"price": "Rs-175000",
+		"img": "assets/samsung/Note10+.jpg"
+	},
+	{
+		"id": "2",
+		"name": "Samsung Galxy Note9",
+		"model": "Note9",
+		"price": "Rs-120000",
+		"img": "assets/samsung/Note9.jpg"
+	},
+	{
+		"id": "3",
+		"name": "Samsung Galxy Note9+",
+		"model": "Note9+",
+		"price": "Rs-140000",
+		"img": "assets/samsung/Note9+.jpg"
+	},
+	{
+		"id": "4",
+		"name": "Samsung Galxy Note8",
+		"model": "Note8",
+		"price": "Rs-80000",
+		"img": "assets/samsung/Note8.jpg"
+	},
+	{
+		"id": "5",
+		"name": "Samsung Galxy Note8+",
+		"model": "Note8+",
+		"price": "Rs-70000",
+		"img": "assets/samsung/Note8+.jpg"
+	},
+	{
+		"id": "6",
+		"name": "Samsung Galaxy S10",
+		"model": "S10",
+		"price": "Rs-200000",
+		"img": "assets/samsung/S10.jpg"
+	},
+	{
+		"id": "7",
+		"name": "Samsung Galaxy S10+",
+		"model": "S10+",
+		"price": "Rs-250000",
+		"img": "assets/samsung/S10+.jpg"
+	},
+	{
+		"id": "8",
+		"name": "Samsung Galaxy S8",
+		"model": "S8",
+		"price": "Rs-100000",
+		"img": "assets/samsung/S8.jpg"
+	},
+	{
+		"id": "9",
+		"name": "Samsung Galaxy S8+",
+		"model": "S8+",
+		"price": "Rs-120000",
+		"img": "assets/samsung/S8+.jpg"
+	},
+	{
+		"id": "10",
+		"name": "Samsung Galaxy S7",
+		"model": "S7",
+		"price": "Rs-75000",
+		"img": "assets/samsung/S7.jpg"
+	},
+	{
+		"id": "11",
+		"name": "Samsung Galaxy s7+",
+		"model": "s7+",
+		"price": "Rs-85000",
+		"img": "assets/samsung/s7+.jpg"
+	},
+	{
+		"id": "12",
+		"name": "Samsung Galaxy A20",
+		"model": "A20",
+		"price": "Rs-30000",
+		"img": "assets/samsung/A20.jpg"
+	},
+	{
+		"id": "13",
+		"name": "Samsung Galaxy A30",
+		"model": "A30",
+		"price": "Rs-45000",
+		"img": "assets/samsung/A30.jpg"
+	},
+	{
+		"id": "14",
+		"name": "Samsung Galaxy A50",
+		"model": "A50",
+		"price": "Rs-60000",
+		"img": "assets/samsung/A50.jpg"
+	},
+	{
+		"id": "15",
+		"name": "Samsung Galaxy A70",
+		"model": "A70",
+		"price": "Rs-70000",
+		"img": "assets/samsung/A70.jpg"
+	},
+]
+

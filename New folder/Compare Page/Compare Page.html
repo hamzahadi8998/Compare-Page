@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Compare Page</title>
+    <style>
+		.SBrand{
+			margin-top: 50px;
+		}
+		.brandCard{
+            width: 35%;
+			height: 450px;
+            background: linear-gradient(to right,orange,gold);
+            border-radius: 10%;
+            margin: 2%;
+            border: solid 4px;
+            float: left;
+            position: relative;
+            transform: translate(-50%);
+            left: 48%;
+	    }
+	    .brandCard img{
+		    position: relative;
+			float: left;
+            left: 50%;
+            transform: translate(-50%);
+		    height: 250px;
+		    border-radius: 30%;
+			border: solid 3px black;
+	    } 
+	    .brandCard h1
+	    {
+			margin-top: 10px;
+		    text-shadow: 1px 1px 10px green
+	    }
+	  </style>
+  </head>
+  <body>
+  <center>
+<select  id="SBrand" class="btn-primary SBrand" onChange="SedBrand()">
+					<option value="1">Select Brand</option>
+					</select>
+ </center>
+ <div class="row">
+	<div class="col-6">
+	 <br>
+	 <br>
+	 <br>
+		 <center>
+			<select  id="LeftSMobile" class="btn-primary" onChange="LeftSedMobile(LeftSMobile.value)">
+					
+					</select>
+		 </center>
+	</div>
+	 <div class="col-6">
+	 <br>
+	 <br>
+	 <br>
+			<center>
+			<select  id="RightSMobile" class="btn-primary" onChange="RightSedMobile(RightSMobile.value)">
+					
+				</select>
+		</center>
+	</div> 
+
+ </div>
+  <div class="row">
+  	<div class="col-6" id="LeftMainCard"></div>
+  	<div class="col-6" id="RightMainCard"></div>
+  </div>
+
+  </body>
+</html>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="brands.json"></script>
+<script src="mobiles.json"></script>
+<script>
+	var m;
+	$("#LeftSMobile").hide();
+	$("#RightSMobile").hide();
+	for(i=0;i<mobileBrands.length;i++)
+		{
+		document.getElementById("SBrand").innerHTML +=`
+            <option value="${mobileBrands[i].id}">${mobileBrands[i].brand}</option>
+`;
+			
+		}
+
+	function SedBrand()
+{		
+	$("#LeftSMobile").show();
+	$("#RightSMobile").show();
+ var a = $("#SBrand").val();
+	alert(a);
+	if(a==0)
+		{
+			m = iphone;
+		}
+	else if(a==1){
+		m = samsung;
+	}
+	document.getElementById("LeftSMobile").innerHTML = "";
+	document.getElementById("RightSMobile").innerHTML = "";
+	document.getElementById("LeftSMobile").innerHTML = `<option value="">Select Mobile</option>`;
+	document.getElementById("RightSMobile").innerHTML = `<option value="">Select Mobile</option>`;
+for(i=0;i<m.length;i++)
+		{
+		document.getElementById("LeftSMobile").innerHTML +=`
+            <option value="${m[i].id}">${m[i].name}</option>
+`;
+			document.getElementById("RightSMobile").innerHTML +=`
+             <option value="${m[i].id}">${m[i].name}</option>
+`;
+			
+		}
+
+	}
+	function LeftSedMobile(Sed)
+	{
+		document.getElementById("LeftMainCard").innerHTML="";
+		document.getElementById("LeftMainCard").innerHTML += `
+<center>
+<div class="brandCard">
+
+<img src="${m[Sed].img}" width="190px" alt="">
+<center>
+<h1>${m[Sed].name}</h1>
+<h3>${m[Sed].price}</h3></center>
+</div>
+</center>
+`;
+	}
+	function RightSedMobile(Sed)
+	{
+		document.getElementById("RightMainCard").innerHTML="";
+		document.getElementById("RightMainCard").innerHTML += `
+<center>
+<div class="brandCard">
+<img src="${m[Sed].img}" width="190px" alt="">
+<center><h1>${m[Sed].name}</h1>
+<h3>${m[Sed].price}</h3></center>
+</div>
+</center>
+`;
+	}
+	
+
+</script>

@@ -1,0 +1,34 @@
+var mobileBrands = 
+[
+	{
+		"id": "0",
+		"brand": "Apple",
+		"url" : "iphoneproducts.html",
+		"picture": "assets/appleLogo.png"
+	},
+	{
+		"id": "1",
+		"brand": "Samsung",
+		"url" : "samsungproducts.html",
+		"picture": "assets/samsungLogo.png"
+	},
+	{
+		"id": "2",
+		"brand": "Nokia",
+		"url" : "products.html",
+		"picture": "assets/nokiaLogo.png"
+	},
+	{
+		"id": "3",
+		"brand": "Infinix",
+		"url" : "products.html",
+		"picture": "assets/infinixLogo.jpg"
+	},
+	{
+		"id": "4",
+		"brand": "Honor",
+		"url" : "products.html",
+		"picture": "assets/honorLogo.jpg"
+	}
+]
+

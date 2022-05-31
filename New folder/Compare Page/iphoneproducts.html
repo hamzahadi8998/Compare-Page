@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Iphone</title>
+<style>
+	.container{
+	height: 780px;
+   	width: 1080px;
+  	background-color: deepskyblue;
+  	border-radius: 5%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+		border: solid 4px;
+		overflow-x: auto
+		
+	}
+	.brandCard{
+	height: 350px;
+    width: 25%;
+    background:linear-gradient(to right,orange,gold);
+    border-radius: 10%;
+    margin: 2%;
+		border: solid 4px;
+		float: left;
+		position: relative;
+		left: 6%;
+	}
+	.brandCard img{
+		    position: relative;
+            left: 50%;
+            transform: translate(-50%);
+		height: 190px;
+		border-radius: 50%;
+	}
+	.brandCard a {
+		text-decoration: none;
+		color: green;
+		position: relative;
+		top: 10px;
+	}
+	.brandCard h1
+	{
+		text-shadow: 1px 1px 10px green
+	}
+	</style>
+</head>
+
+<body>
+<div class="container" id="container">
+</div>
+</body>
+</html>
+<script src="iphone.json"></script>
+<script>
+	for	(i=0;i<iphone.length;i++)
+		{
+			document.getElementById("container").innerHTML += `
+<div class="brandCard">
+<img src="${iphone[i].img}" width="190px" alt="">
+<hr>
+<center><h1>${iphone[i].name}</h1>
+<h3>${iphone[i].price}</h3></center>
+</div>
+`;
+		}
+</script>
+
